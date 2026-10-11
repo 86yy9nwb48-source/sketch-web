@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { hero } from "@/data/content";
-import { EditorialButton } from "./EditorialButton";
 
 const EASE = [0.16, 0.84, 0.44, 1] as const;
 const fadeUp = {
@@ -17,7 +16,7 @@ const fadeUp = {
 export function Hero() {
   return (
     <section id="top" data-bg="black" className="relative flex min-h-[100svh] flex-col bg-ink text-paper">
-      <div className="relative z-10 flex flex-1 flex-col justify-center px-5 pb-10 sm:px-10 sm:justify-end sm:pb-16 md:justify-center md:pt-24 md:pb-24">
+      <div className="relative z-10 flex flex-1 flex-col justify-center px-5 pb-[174px] min-[465px]:pb-[122px] sm:px-10 sm:justify-end sm:pb-[146px] md:justify-center md:pt-24 md:pb-[178px]">
         <motion.p
           custom={0}
           variants={fadeUp}
@@ -39,15 +38,6 @@ export function Hero() {
             </motion.span>
           ))}
         </h1>
-
-        <motion.div custom={0.42} variants={fadeUp} initial="hidden" animate="visible" className="mt-9 flex flex-wrap items-center gap-7">
-          <EditorialButton href="#contact" tone="on-dark">
-            {hero.ctaPrimary} →
-          </EditorialButton>
-          <a href="#method" className="border-b border-paper/35 pb-1 font-sans text-[12.5px] text-paper/80 transition-colors duration-300 hover:border-paper hover:text-paper">
-            {hero.ctaSecondary}
-          </a>
-        </motion.div>
       </div>
 
       <div className="relative z-10 flex items-center gap-2.5 px-5 pb-6 font-sans text-[10px] tracking-[0.2em] text-paper/40 uppercase sm:px-10 md:absolute md:right-10 md:bottom-8 md:pb-0">

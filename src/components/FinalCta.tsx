@@ -26,9 +26,6 @@ export function FinalCta() {
             <p className="mt-1 font-sans text-[11px] font-medium tracking-[0.22em] text-paper/50 uppercase">{brand.tagline}</p>
           </div>
           <div className="flex flex-wrap items-center gap-8">
-            <EditorialButton href="#program" tone="on-dark">
-              {finalCta.primary} →
-            </EditorialButton>
             <EditorialButton href={brand.instagramUrl} target="_blank" rel="noopener noreferrer" variant="text" tone="on-dark">
               {finalCta.secondary} →
             </EditorialButton>

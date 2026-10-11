@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { services } from "@/data/content";
 import { Reveal } from "./Reveal";
-import { EditorialButton } from "./EditorialButton";
 import { EditorialPlaceholder } from "./EditorialPlaceholder";
 
 export function Services() {
@@ -53,10 +52,7 @@ export function Services() {
                   </div>
                   <div className={`flex flex-col justify-center ${reversed ? "md:order-1" : ""}`}>
                     <p className="mb-4 font-kr text-[19px] leading-[1.5] font-semibold whitespace-pre-line">{item.tagline}</p>
-                    <p className="mb-7 max-w-[42ch] text-[15px] leading-[1.8] text-ink/60">{item.desc}</p>
-                    <EditorialButton href={item.href} variant="text" tone="on-light" className="w-fit">
-                      {item.link} →
-                    </EditorialButton>
+                    <p className="max-w-[42ch] text-[15px] leading-[1.8] text-ink/60">{item.desc}</p>
                   </div>
                 </div>
               </Reveal>

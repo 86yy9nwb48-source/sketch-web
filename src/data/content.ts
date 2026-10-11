@@ -32,8 +32,6 @@ export const hero = {
   wordmark: "SKETCH.",
   descriptor: "VISUAL DIRECTING",
   headline: ["나를 이해하는 것에서", "이미지가 시작됩니다."],
-  ctaPrimary: "DISCOVER YOUR IMAGE",
-  ctaSecondary: "Explore our method →",
 };
 
 export const manifesto = {
@@ -64,8 +62,6 @@ export const services = {
       title: ["INNER", "× OUTER"],
       tagline: "내면과 외면을 함께 읽는\nVisual Directing",
       desc: "성향과 행동 패턴, 신체의 선과 색, 타인에게 전달되는 인상을 함께 분석합니다.",
-      link: "VIEW METHOD",
-      href: "#method",
       image: sketchImages.serviceAnalysis,
     },
     {
@@ -73,8 +69,6 @@ export const services = {
       title: ["IMAGE", "BLUEPRINT"],
       tagline: "감이 아닌 기준으로 만드는\n나만의 이미지 방향",
       desc: "분석한 데이터를 바탕으로 개인의 이미지 방향을 시각적인 기준으로 구조화합니다.",
-      link: "VIEW REPORT",
-      href: "#method",
       image: sketchImages.serviceBlueprint,
     },
     {
@@ -82,8 +76,6 @@ export const services = {
       title: ["STYLING", "DIRECTION"],
       tagline: "분석에서\n실제 이미지까지",
       desc: "도출된 이미지 방향을 퍼스널 컬러 / 뷰티 / 패션 / 스타일링으로 연결합니다.",
-      link: "VIEW PROGRAM",
-      href: "#program",
       image: sketchImages.serviceStyling,
     },
   ],
@@ -216,7 +208,6 @@ export const faq = {
 export const finalCta = {
   eyebrow: "YOUR IMAGE ALREADY EXISTS.",
   headline: ["DISCOVER", "YOUR", "IMAGE."],
-  primary: "START YOUR SKETCH",
   secondary: "INSTAGRAM",
 };
 
